@@ -8,7 +8,7 @@ This dokku plugin could be easily modified to support other error trackers (Sent
 
 Verified to work on dokku 0.5+, will probably work without modification on early dokku versions.
 ```sh
-$ dokku plugin:install https://github.com/iloveitaly/dokku-rollbar.git
+$ dokku plugin:install https://github.com/vlucas/dokku-rollbar.git
 ```
 
 The plugin pulls the Rollbar access token from your app's `ROLLBAR_TOKEN` and
