@@ -6,14 +6,14 @@ This dokku plugin could be easily modified to support other error trackers (Sent
 
 ## Installation
 
-Verified to work on dokku 0.5+, will probably work without modification on early dokku versions.
+Verified to work on dokku 0.7+, will probably work without modification on early dokku versions.
 ```sh
 $ dokku plugin:install https://github.com/vlucas/dokku-rollbar.git
 ```
 
 The plugin pulls the Rollbar access token from your app's `ROLLBAR_TOKEN` and
-your environment from `RAILS_ENV`. The app environment will default to `production`
-if `RAILS_ENV` is not found
+your environment from `NODE_ENV`. The app environment will default to `production`
+if `NODE_ENV` is not found
 
 ## Commands
 
