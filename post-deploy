@@ -19,7 +19,7 @@ if [[ $ROLLBAR_TOKEN ]]; then
     -F access_token=$ROLLBAR_TOKEN \
     -F environment=$ENVIRONMENT \
     -F revision=$REVISION \
-    -F comment=$COMMENT \
+    -F comment="$COMMENT" \
     -F local_username=$LOCAL_USERNAME
   )
 
